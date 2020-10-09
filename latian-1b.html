@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/live.js"></script>
+    
     <title>Latihan 1</title>
 
     <!-- style css -->
@@ -17,10 +17,27 @@
         a {
             text-decoration: none;
         }
-
+        /* selector id */
         #editor {
             color: green;
             font-size: 20px;
+        }
+
+        /* selector class */
+        .container {
+            border: 2px solid black;
+            margin: 25px 50px 75px 25px;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 25px;
+        }
+
+        .container .foto img {
+            width: 100%;
+        }
+
+        .description {
+            text-align: center;
         }
 
         .isi {
@@ -29,6 +46,7 @@
     </style>
 </head>
 <body>
+    <!-- judul -->
     <h1>
         <a href="https://bola.kompas.com/read/2020/10/09/15000078/shin-tae-yong-komentari-penampilan-2-debutan-timnas-u19-indonesia" target="_blank">
 
@@ -37,18 +55,28 @@
         </a>
     </h1>
 
-    <p id="editor"><strong>Editor Ferril Dennys</strong></p>
-    <p class="isi">
-        <b>
-            <a href="https://www.kompas.com/" target="_blank">KOMPAS.com</a>
-        </b> - Pelatih timnas U19 Indonesia, Shin Tae-yong, mengomentari penampilan dua pemain Garuda Muda yang melakoni debut pada laga uji coba kontra NK Dugopolje. </p>
+    <!-- konten -->
+    <div class="container">
+        <div class="foto">
+            <img src="img/coach.jpeg" alt="coach">
+            <p class="description">Pelatih sekaligus manager TImnas Indonesia</p>
+        </div>
         
-        <p class="isi">Adapun laga timnas U19 Indonesia vs NK Dugopolje yang digelar di Stadion NK Uskok Klis, Split, Kamis (8/10/2020) malam WIB, itu berakhir dengan skor 3-0 untuk kemenangan Garuda Muda.</p>
         
-        <p class="isi">Gol-gol kemenangan skuad asuhan Shin Tae-yong diciptakan oleh tiga pemain berbeda, Braif Fatari (3'), Brylian Aldama (15'-penalti), Witan Sulaeman (21'). Ini adalah kemenangan ketiga timnas U19 Indonesia selama menjalani pemusatan latihan (TC) di Kroasia. Dua kemenangan sebelumnya mereka petik saat bersua Qatar (2-1) dan Dinamo Zagreb (1-0).</p> 
-        
-        <p class="isi">Dalam laga kontra NK Dugopolje, Yofandani dan Fadhil baru masuk pada babak kedua, setelah timnas U19 Indonesia sudah unggul 3-0. Kendati tampil sebagai pemain pengganti, kedua pemain itu sudah cukup membuat Shin Tae-yong puas. Shin Tae-yong mengatakan bahwa Yofandani dan Fadhil bermain dengan baik saat menjajal kekuatan NK Dugopolje.</p> 
-        
-        <p class="isi">"Hari ini Yofandani dan Muhammad Fadhil menjalani debut pertama kali selama uji coba di Kroasia, saya rasa mereka bermain dengan baik," kata Shin Tae-yong, dikutip dari laman resmi PSSI.</p>
+        <p id="editor"><strong>Editor Ferril Dennys</strong></p>
+        <p class="isi">
+            <b>
+                <a href="https://www.kompas.com/" target="_blank">KOMPAS.com</a>
+            </b> - Pelatih timnas U19 Indonesia, Shin Tae-yong, mengomentari penampilan dua pemain Garuda Muda yang melakoni debut pada laga uji coba kontra NK Dugopolje. </p>
+            
+            <p class="isi">Adapun laga timnas U19 Indonesia vs NK Dugopolje yang digelar di Stadion NK Uskok Klis, Split, Kamis (8/10/2020) malam WIB, itu berakhir dengan skor 3-0 untuk kemenangan Garuda Muda.</p>
+            
+            <p class="isi">Gol-gol kemenangan skuad asuhan Shin Tae-yong diciptakan oleh tiga pemain berbeda, Braif Fatari (3'), Brylian Aldama (15'-penalti), Witan Sulaeman (21'). Ini adalah kemenangan ketiga timnas U19 Indonesia selama menjalani pemusatan latihan (TC) di Kroasia. Dua kemenangan sebelumnya mereka petik saat bersua Qatar (2-1) dan Dinamo Zagreb (1-0).</p> 
+            
+            <p class="isi">Dalam laga kontra NK Dugopolje, Yofandani dan Fadhil baru masuk pada babak kedua, setelah timnas U19 Indonesia sudah unggul 3-0. Kendati tampil sebagai pemain pengganti, kedua pemain itu sudah cukup membuat Shin Tae-yong puas. Shin Tae-yong mengatakan bahwa Yofandani dan Fadhil bermain dengan baik saat menjajal kekuatan NK Dugopolje.</p> 
+            
+            <p class="isi">"Hari ini Yofandani dan Muhammad Fadhil menjalani debut pertama kali selama uji coba di Kroasia, saya rasa mereka bermain dengan baik," kata Shin Tae-yong, dikutip dari laman resmi PSSI.</p>
+    </div>
+    <script src="js/live.js"></script>
 </body>
 </html>
